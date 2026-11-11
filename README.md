@@ -1,1 +1,1 @@
-reset set stand components
+Std c compiler
