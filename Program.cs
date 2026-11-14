@@ -108,9 +108,9 @@ int main() {
             }
             catch (Exception ex)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                //Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error: " + ex.Message);
-                Console.ResetColor();
+                //Console.ResetColor();
                 return 1;
             }
         }
@@ -186,10 +186,10 @@ int main() {
 
             File.WriteAllText(outputFile, assembly, new UTF8Encoding(false));
 
-            Console.ForegroundColor = ConsoleColor.Green;
+            //Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine();
             Console.WriteLine("Compilation successful!");
-            Console.ResetColor();
+            //Console.ResetColor();
 
             Console.WriteLine("Input lines:  " + source.Split('\n').Length);
             Console.WriteLine("Output lines: " + assembly.Split('\n').Length);
